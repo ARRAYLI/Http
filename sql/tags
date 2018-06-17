@@ -1,0 +1,31 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+SqlConnector	sql.cpp	/^SqlConnector::SqlConnector(const string _user,$/;"	f	class:SqlConnector
+SqlConnector	sql.h	/^class SqlConnector$/;"	c
+_SQL_H	sql.h	9;"	d
+connect	sql.cpp	/^bool SqlConnector::connect()$/;"	f	class:SqlConnector
+connector	sql.h	/^    MYSQL* connector;$/;"	m	class:SqlConnector
+db	sql.h	/^    string db;$/;"	m	class:SqlConnector
+get_arg	insert_cgi.cpp	/^bool get_arg(char* buf)$/;"	f
+get_arg	select_cgi.cpp	/^bool get_arg(char* buf)$/;"	f
+get_data	insert_cgi.cpp	/^int get_data(char* buf)$/;"	f
+insert	sql.cpp	/^bool SqlConnector::insert(const string &name,$/;"	f	class:SqlConnector
+insert_data	insert_cgi.cpp	/^void insert_data(char* buf)$/;"	f
+ip	sql.h	/^    string ip;$/;"	m	class:SqlConnector
+main	env.c	/^int main(void)$/;"	f
+main	insert_cgi.cpp	/^int main(void)$/;"	f
+main	select_cgi.cpp	/^int main(void)$/;"	f
+main	test_sql.cpp	/^int main(void)$/;"	f
+passwd	sql.h	/^    string passwd;$/;"	m	class:SqlConnector
+port	sql.h	/^    int port;$/;"	m	class:SqlConnector
+select	sql.cpp	/^bool SqlConnector::select()$/;"	f	class:SqlConnector
+send_200	insert_cgi.cpp	/^void send_200()$/;"	f
+send_200	select_cgi.cpp	/^void send_200()$/;"	f
+send_404	insert_cgi.cpp	/^void send_404()$/;"	f
+send_404	select_cgi.cpp	/^void send_404()$/;"	f
+user	sql.h	/^    string user;$/;"	m	class:SqlConnector
+~SqlConnector	sql.cpp	/^ SqlConnector::~SqlConnector()$/;"	f	class:SqlConnector

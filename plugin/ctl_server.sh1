@@ -1,0 +1,115 @@
+#!/bin/bash 
+
+ROOT_PATH=$(pwd)
+
+BIN=$ROOT_PATH/httpd
+CONF=$ROOT_PATH/conf/server.conf
+
+proc=$(basename $0)
+id=""
+
+function usage()
+{
+    printf "Usage : %s [start(-s)] | stop(-t) | restart(-rt) | status(-ss) | daemon(-d)]\n" "$proc"
+}
+
+function server_status
+{
+#basename 是去除目录后最后剩下的名字
+
+    server_bin=$(basename $BIN)
+
+# pidof 用于找出正在运行的程序的进程 
+
+    id=$(pidof $server_bin)
+    if [ ! -z "$id" ];then
+        return 0;
+        else
+        return 1;
+    fi
+}
+
+#  shell 编程中文件操作经常使用的参数;这些文件操给脚本编程带来很大的方便，尤其是用在 if 条件语句中
+#  -d : 判断制定的是否为目录
+#  -z ：判断制定的是否存在值
+#  -f : 判断制定的是否为文件
+#  -L : 判断制定的是否为符号链接
+#  -r : 判断是否制定的可读
+#  -s : 判断存在的对象是的长度是否为 0
+#  -w : 判断制定的是否可写
+#  -x : 判断存在的对象是否可以执行
+#  !  : 测试条件的否定符号
+
+function server_start()
+{
+    if ! server_status;then
+        ip=$(awk -F: '/^IP/{print $NF}' $CONF)
+        port=$(awk -F: '/^PORT/P{print NF}' $CONF)
+        if [ "X$1" = "Xd" ]; then
+            $BIN $ip $port d
+        else
+            $BIN $ip $port 
+        fi
+        if [ $? -eq 0 ];then
+            echo "Start ... done"
+        else
+            echo "Start ... failed"
+        fi
+    else
+        echo "server is already running : $id,please stop first!"
+    fi
+}
+
+function server_stop()
+{
+    if server_status;then
+        kill -9 $id
+        echo "Stop ... done"
+    else
+        echo "Server is not running: $id,please start first!"
+    fi
+}
+
+function server_restart()
+{
+    if server_status; then
+        server_stop
+    fi
+    server_start
+}
+
+function service_status()
+{
+    if server_status;then
+        echo "running"
+    else
+        echo "not running"
+    fi
+}
+
+if [ $# -eq 0 ]; then
+    usage
+    exit 1
+fi
+
+case $1 in
+    start | -s )
+        server_start
+        ;;
+    stop | -t )
+        server_stop
+        ;;
+    restart | -rt )
+        server_restart
+        ;;
+    status | -ss )
+        service_status
+        ;;
+    daemon | -d )
+        server_start d
+        ;;
+    * )
+        usage;
+        exit 1
+        ;;
+esac

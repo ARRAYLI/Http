@@ -1,0 +1,134 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUFSIZE	http.h	32;"	d
+BUFSIZE	src/http.h	32;"	d
+CThread_worker	src/threadpool.h	/^}CThread_worker;$/;"	t	typeref:struct:worker
+CThread_worker	threadpool.h	/^}CThread_worker;$/;"	t	typeref:struct:worker
+ERROR_BIND	http.h	/^     ERROR_BIND,$/;"	e	enum:STATS
+ERROR_BIND	src/http.h	/^     ERROR_BIND,$/;"	e	enum:STATS
+ERROR_EXECL	http.h	/^     ERROR_EXECL$/;"	e	enum:STATS
+ERROR_EXECL	src/http.h	/^     ERROR_EXECL$/;"	e	enum:STATS
+ERROR_LISTEN	http.h	/^     ERROR_LISTEN,$/;"	e	enum:STATS
+ERROR_LISTEN	src/http.h	/^     ERROR_LISTEN,$/;"	e	enum:STATS
+ERROR_SOCKET	http.h	/^     ERROR_SOCKET,$/;"	e	enum:STATS
+ERROR_SOCKET	src/http.h	/^     ERROR_SOCKET,$/;"	e	enum:STATS
+ERROR_USE	http.h	/^     ERROR_USE,$/;"	e	enum:STATS
+ERROR_USE	src/http.h	/^     ERROR_USE,$/;"	e	enum:STATS
+LISTEN_NUM	http.h	29;"	d
+LISTEN_NUM	src/http.h	29;"	d
+MAX_THREAD_NUM	main.c	14;"	d	file:
+MAX_THREAD_NUM	src/main.c	14;"	d	file:
+STATS	http.h	/^ enum STATS$/;"	g
+STATS	src/http.h	/^ enum STATS$/;"	g
+SqlConnector	sql/sql.cpp	/^SqlConnector::SqlConnector(const string _user,$/;"	f	class:SqlConnector
+SqlConnector	sql/sql.h	/^class SqlConnector$/;"	c
+_CALC_H	wwwroot/cgi-bin/Calc.h	9;"	d
+_HTTP_H	http.h	9;"	d
+_HTTP_H	src/http.h	9;"	d
+_SQL_H	sql/sql.h	9;"	d
+_THREADPOOL_H	src/threadpool.h	9;"	d
+_THREADPOOL_H	threadpool.h	9;"	d
+arg	src/threadpool.h	/^    void* arg;  \/* 回调函数的参数 *\/$/;"	m	struct:worker
+arg	threadpool.h	/^    void* arg;  \/* 回调函数的参数 *\/$/;"	m	struct:worker
+connect	sql/sql.cpp	/^bool SqlConnector::connect()$/;"	f	class:SqlConnector
+connector	sql/sql.h	/^    MYSQL* connector;$/;"	m	class:SqlConnector
+cur_queue_size	src/threadpool.h	/^    int cur_queue_size;$/;"	m	struct:__anon2
+cur_queue_size	threadpool.h	/^    int cur_queue_size;$/;"	m	struct:__anon1
+db	sql/sql.h	/^    string db;$/;"	m	class:SqlConnector
+destroy_threadpool	src/threadpool.c	/^int destroy_threadpool(threadpool_t *pool)$/;"	f
+destroy_threadpool	threadpool.c	/^int destroy_threadpool(threadpool_t *pool)$/;"	f
+get_arg	sql/insert_cgi.cpp	/^bool get_arg(char* buf)$/;"	f
+get_arg	sql/select_cgi.cpp	/^bool get_arg(char* buf)$/;"	f
+get_arg	wwwroot/cgi-bin/math_cgi.cpp	/^bool get_arg(char* buf)$/;"	f
+get_data	sql/insert_cgi.cpp	/^int get_data(char* buf)$/;"	f
+getopt_cmd	main.c	/^int getopt_cmd(int argc,char* argv[])$/;"	f
+getopt_cmd	src/main.c	/^int getopt_cmd(int argc,char* argv[])$/;"	f
+handler	test_threadpool.c	/^void* handler(void* arg)$/;"	f
+http_clear_head	http.c	/^int http_clear_head(int sockfd)$/;"	f
+http_clear_head	http_src.c	/^int http_clear_head(int sockfd)$/;"	f
+http_clear_head	src/http.c	/^int http_clear_head(int sockfd)$/;"	f
+http_echo_403	http.c	/^int http_echo_403(int sockfd)$/;"	f
+http_echo_403	http_src.c	/^int http_echo_403(int sockfd)$/;"	f
+http_echo_403	src/http.c	/^int http_echo_403(int sockfd)$/;"	f
+http_echo_404	http.c	/^int http_echo_404(int sockfd)$/;"	f
+http_echo_404	http_src.c	/^int http_echo_404(int sockfd)$/;"	f
+http_echo_404	src/http.c	/^int http_echo_404(int sockfd)$/;"	f
+http_echo_501	http.c	/^int http_echo_501(int sockfd)$/;"	f
+http_echo_501	http_src.c	/^int http_echo_501(int sockfd)$/;"	f
+http_echo_501	src/http.c	/^int http_echo_501(int sockfd)$/;"	f
+http_echo_error	http.c	/^int http_echo_error(int sockfd, int state)$/;"	f
+http_echo_error	http_src.c	/^int http_echo_error(int sockfd,int state)$/;"	f
+http_echo_error	src/http.c	/^int http_echo_error(int sockfd,int state)$/;"	f
+http_execute_cgi	http.c	/^int http_execute_cgi(int sockfd, const char* method, const char* path, const char* query_string)$/;"	f
+http_execute_cgi	http_src.c	/^int http_execute_cgi(int sockfd,const char*method,const char*path,const char* query_string)$/;"	f
+http_execute_cgi	src/http.c	/^int http_execute_cgi(int sockfd,const char*method,const char*path,const char* query_string)$/;"	f
+http_getline	http.c	/^int http_getline(int sockfd, char *buf, int buf_length)$/;"	f
+http_getline	http_src.c	/^int http_getline(int sockfd,char*buf,int length)$/;"	f
+http_getline	src/http.c	/^int http_getline(int sockfd,char*buf,int length)$/;"	f
+http_handler_request	http.c	/^void* http_handler_request(void* new_sock)$/;"	f
+http_handler_request	http_src.c	/^void* http_handler_request(void *newfd)$/;"	f
+http_handler_request	src/http.c	/^void* http_handler_request(void *newfd)$/;"	f
+http_send_html	http.c	/^int http_send_html(int sockfd, const char* path, int file_size)$/;"	f
+http_send_html	http_src.c	/^int http_send_html(int sockfd,const char* path,int file_size)$/;"	f
+http_send_html	src/http.c	/^int http_send_html(int sockfd,const char* path,int file_size)$/;"	f
+http_start_up	http.c	/^int http_start_up(const char* ip, int port)$/;"	f
+http_start_up	http_src.c	/^int http_start_up(const char*ip,int port)$/;"	f
+http_start_up	src/http.c	/^int http_start_up(const char*ip,int port)$/;"	f
+http_usage	main.c	/^static void http_usage(const char*proc)$/;"	f	file:
+http_usage	src/main.c	/^static void http_usage(const char*proc)$/;"	f	file:
+insert	sql/sql.cpp	/^bool SqlConnector::insert(const string &name,$/;"	f	class:SqlConnector
+insert_data	sql/insert_cgi.cpp	/^void insert_data(char* buf)$/;"	f
+ip	sql/sql.h	/^    string ip;$/;"	m	class:SqlConnector
+main	main.c	/^int main(int argc,char* argv[])$/;"	f
+main	sql/env.c	/^int main(void)$/;"	f
+main	sql/insert_cgi.cpp	/^int main(void)$/;"	f
+main	sql/select_cgi.cpp	/^int main(void)$/;"	f
+main	sql/test_sql.cpp	/^int main(void)$/;"	f
+main	src/main.c	/^int main(int argc,char* argv[])$/;"	f
+main	src/test_daemo/getopt.c	/^int main(int argc,char* argv[])$/;"	f
+main	src/test_daemo/html.cpp	/^int main(void)$/;"	f
+main	test_threadpool.c	/^int main(void)$/;"	f
+main	wwwroot/cgi-bin/math_cgi.cpp	/^int main()$/;"	f
+main	wwwroot/cgi-bin/math_test.cpp	/^int main(void)$/;"	f
+math_cal	wwwroot/cgi-bin/math_cgi.cpp	/^void math_cal(char* buf)$/;"	f
+max_thread_num	src/threadpool.h	/^    int max_thread_num;$/;"	m	struct:__anon2
+max_thread_num	threadpool.h	/^    int max_thread_num;$/;"	m	struct:__anon1
+next	src/threadpool.h	/^    struct worker* next;$/;"	m	struct:worker	typeref:struct:worker::worker
+next	threadpool.h	/^    struct worker* next;$/;"	m	struct:worker	typeref:struct:worker::worker
+passwd	sql/sql.h	/^    string passwd;$/;"	m	class:SqlConnector
+port	sql/sql.h	/^    int port;$/;"	m	class:SqlConnector
+process	src/threadpool.h	/^    void* (*process)(void *arg);$/;"	m	struct:worker
+process	threadpool.h	/^    void* (*process)(void *arg);$/;"	m	struct:worker
+queue_head	src/threadpool.h	/^    CThread_worker *queue_head;$/;"	m	struct:__anon2
+queue_head	threadpool.h	/^    CThread_worker *queue_head;$/;"	m	struct:__anon1
+queue_lock	src/threadpool.h	/^    pthread_mutex_t queue_lock;   $/;"	m	struct:__anon2
+queue_lock	threadpool.h	/^    pthread_mutex_t queue_lock;   $/;"	m	struct:__anon1
+queue_ready	src/threadpool.h	/^    pthread_cond_t queue_ready;$/;"	m	struct:__anon2
+queue_ready	threadpool.h	/^    pthread_cond_t queue_ready;$/;"	m	struct:__anon1
+select	sql/sql.cpp	/^bool SqlConnector::select()$/;"	f	class:SqlConnector
+send_200	sql/insert_cgi.cpp	/^void send_200()$/;"	f
+send_200	sql/select_cgi.cpp	/^void send_200()$/;"	f
+send_200	wwwroot/cgi-bin/math_cgi.cpp	/^void send_200()$/;"	f
+send_404	sql/insert_cgi.cpp	/^void send_404()$/;"	f
+send_404	sql/select_cgi.cpp	/^void send_404()$/;"	f
+send_404	wwwroot/cgi-bin/math_cgi.cpp	/^void send_404()$/;"	f
+shutdown	src/threadpool.h	/^    int shutdown;$/;"	m	struct:__anon2
+shutdown	threadpool.h	/^    int shutdown;$/;"	m	struct:__anon1
+threadId	src/threadpool.h	/^    pthread_t* threadId;$/;"	m	struct:__anon2
+threadId	threadpool.h	/^    pthread_t* threadId;$/;"	m	struct:__anon1
+thread_routine	src/threadpool.c	/^void *thread_routine(void *arg)$/;"	f
+thread_routine	threadpool.c	/^void *thread_routine(void *arg)$/;"	f
+threadpool_add_task	src/threadpool.c	/^int threadpool_add_task(threadpool_t* pool,void* (*process)(void*arg),void* arg)$/;"	f
+threadpool_add_task	threadpool.c	/^int threadpool_add_task(threadpool_t* pool,void* (*process)(void*arg),void* arg)$/;"	f
+threadpool_create	src/threadpool.c	/^threadpool_t *threadpool_create(int max_thr_num)$/;"	f
+threadpool_create	threadpool.c	/^threadpool_t *threadpool_create(int max_thr_num)$/;"	f
+threadpool_t	src/threadpool.h	/^}threadpool_t;$/;"	t	typeref:struct:__anon2
+threadpool_t	threadpool.h	/^}threadpool_t;$/;"	t	typeref:struct:__anon1
+user	sql/sql.h	/^    string user;$/;"	m	class:SqlConnector
+worker	src/threadpool.h	/^typedef struct worker$/;"	s
+worker	threadpool.h	/^typedef struct worker$/;"	s
+~SqlConnector	sql/sql.cpp	/^ SqlConnector::~SqlConnector()$/;"	f	class:SqlConnector
