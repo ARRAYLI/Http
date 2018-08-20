@@ -15,7 +15,7 @@ cd http
 
 git clone git@github.com:ARRAYLI/Http.git
 
-git cd HTTP_SERVER/
+git cd Http/
 
 ./build.sh
 
